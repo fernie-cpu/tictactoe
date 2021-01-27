@@ -75,7 +75,7 @@ let displayController = (function() {
 })();
 
 let game = (function () {
-    const gameCells = document.querySelectorAll('.cell'); //try change to data-cell later
+    const gameCells = document.querySelectorAll('.cell');
     const replayBtn = document.querySelector('.replay-btn');
     replayBtn.addEventListener('click',replayGame);
 
