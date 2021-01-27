@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: .8rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    margin: 0 .8rem;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.players input {
+    outline: none;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.button-center button,
+.replay-div button {
+    font-family: inherit;
+    padding: .9rem;
+    margin: 0 .5rem;
+    font-size: 1rem;
+    background: #162186;
+    color: white;
+    border: 1px solid #162186;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.button-center button:hover,
+.replay-div button:hover {
+    background: white;
+    color: #162186;
+    border: 1px solid #162186;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 1rem auto;
+}
+
+.result {
+    display: none;
+    height: 70px;
+    justify-content: center;
+    align-items:  center;
+	font-family: cursive, sans-serif;
+	font-size: 1.3em;
+	letter-spacing: 1px;
+	font-weight: bolder;
+	margin-bottom: 20px;
+	color: white;
+	background: #162186;
+}
+
+.result h2 {
+    text-align: center;
+}
+
+.cell {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	line-height: 40px;
+	color: #162186;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.cell:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8) {
+    border-bottom: none;
+}
+
+.replay-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding: .9rem;
+}
+
+.wrap {
+    flex: 1 0 auto;
+}
+
+footer {
+    background: white;
+    border-top: 2px solid #ccc;
+    flex-shrink: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #162186;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

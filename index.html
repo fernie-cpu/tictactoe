@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <div class="wrap">
+        <section class="players">
+            <input type="text" id="player1info" placeholder="Player 1">
+            <h2>VS</h2>
+            <input type="text" id="player2info" placeholder="Player 2">
+        </section>
+
+        <section class="result"><h2></h2></section>
+        
+        <section class="button-center">
+            
+            <button id="AI">AI (Easy)</button>
+            <button id="AI-hard">AI (Unbeatable)</button>
+            <button id="two-players">2 Players</button>
+        </section>
+
+        <div class="gameBoard">
+            <div class="cell" id="cell0"></div>
+            <div class="cell" id="cell1"></div>
+            <div class="cell" id="cell2"></div>
+            <div class="cell" id="cell3"></div>
+            <div class="cell" id="cell4"></div>
+            <div class="cell" id="cell5"></div>
+            <div class="cell" id="cell6"></div>
+            <div class="cell" id="cell7"></div>
+            <div class="cell" id="cell8"></div>
+        </div>
+        <div class="replay-div">
+            <button class="replay-btn">Restart</button>
+        </div>
+    </div>
+    <footer>
+        <p>This project is part of <a href="https://theodinproject.com" target="_blank">The Odin Project</a> curriculum</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
